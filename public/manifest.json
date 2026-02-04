@@ -1,0 +1,17 @@
+{
+  "name": "Coswear",
+  "short_name": "Coswear",
+  "description": "Cosplayer-focused WEAR-style PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#ff5c8d",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
