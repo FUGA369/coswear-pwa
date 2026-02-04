@@ -1,0 +1,11 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='800'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1' y1='0' y2='1'>
+      <stop offset='0%' stop-color='#845ec2'/>
+      <stop offset='100%' stop-color='#ffffff'/>
+    </linearGradient>
+  </defs>
+  <rect width='800' height='800' fill='url(#g)'/>
+  <text x='50%' y='50%' text-anchor='middle' dominant-baseline='middle' font-size='72' font-family='Verdana' fill='#ffffff'>Cos 4</text>
+</svg>
