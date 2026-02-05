@@ -4,11 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const tabs = [
-  { href: "/", label: "Home", icon: "🏠" },
-  { href: "/search", label: "Search", icon: "🔍" },
-  { href: "/post", label: "Post", icon: "➕" },
-  { href: "/saved", label: "Saved", icon: "💾" },
-  { href: "/my", label: "My", icon: "👤" }
+  { href: "/", label: "ホーム", icon: "🏠" },
+  { href: "/search", label: "検索", icon: "🔍" },
+  { href: "/post", label: "投稿", icon: "➕" },
+  { href: "/saved", label: "保存", icon: "💾" },
+  { href: "/my", label: "マイ", icon: "👤" }
 ];
 
 export default function Tabs() {
