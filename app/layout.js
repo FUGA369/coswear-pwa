@@ -6,11 +6,17 @@ import AppHeader from "../components/AppHeader";
 export const metadata = {
   title: "Coswear",
   description: "Cosplayer-focused WEAR-style PWA",
-  manifest: "/manifest.json"
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Coswear"
+  }
 };
 
 export const viewport = {
-  themeColor: "#1dafff"
+  themeColor: "#1dafff",
+  viewportFit: "cover"
 };
 
 export default function RootLayout({ children }) {
@@ -22,13 +28,15 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
-        <AppProvider>
-          <div className="app-shell">
-            <AppHeader />
-            <main>{children}</main>
-          </div>
-          <Tabs />
-        </AppProvider>
+        <div className="mobile-app">
+          <AppProvider>
+            <div className="app-shell">
+              <AppHeader />
+              <main>{children}</main>
+            </div>
+            <Tabs />
+          </AppProvider>
+        </div>
       </body>
     </html>
   );

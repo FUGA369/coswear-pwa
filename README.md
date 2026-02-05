@@ -1,6 +1,6 @@
 # Coswear PWA (MVP)
 
-コスプレイヤー向けのWEAR風PWAのMVPです。Home / Search / Post / Saved / My の5タブで、写真中心の2カラムグリッドと最小限の情報表示を実装しています。
+コスプレイヤー向けのWEAR風PWAのMVPです。Home / Search / Post / Saved / My の5タブで、写真中心の表示をアプリ専用レイアウト（モバイル幅・固定下部タブ・セーフエリア対応）で実装しています。
 
 ## 起動方法
 
@@ -27,3 +27,10 @@ npm run dev
 - **Saved**：保存済み投稿一覧
 - **My**：WEAR風のダークヘッダー付き個人ページ
 - **Look Detail**：写真タップで遷移する投稿詳細（大きなビジュアル＋アクション）
+
+
+## アプリ版UI調整
+
+- デスクトップでもスマホアプリの見え方になるよう、中央固定のモバイルフレームに統一。
+- 下部タブはアプリ幅に固定し、`safe-area-inset-bottom` を考慮。
+- iOS向け `appleWebApp` メタデータと `viewport-fit=cover` を追加。
