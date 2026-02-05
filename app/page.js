@@ -27,7 +27,7 @@ export default function HomePage() {
       <div className="section-title">Stories</div>
       <StoryRow />
       <div className="section-title">New Posts</div>
-      <PostGrid posts={posts} />
+      <PostGrid posts={posts} columns="three" />
     </div>
   );
 }
