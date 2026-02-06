@@ -2,6 +2,7 @@ import "./globals.css";
 import { AppProvider } from "../components/AppProvider";
 import Tabs from "../components/Tabs";
 import StartupSplash from "../components/StartupSplash";
+import TopHeader from "../components/TopHeader";
 
 export const metadata = {
   title: "Coswear",
@@ -34,9 +35,7 @@ export default function RootLayout({ children }) {
         <AppProvider>
           <StartupSplash />
           <div className="app-shell">
-            <header className="site-header">
-              <img src="/icons/hue-logo.svg" alt="HUE" className="site-logo" />
-            </header>
+            <TopHeader />
             <main>{children}</main>
             <Tabs />
           </div>
