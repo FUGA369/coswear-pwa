@@ -1,12 +1,25 @@
 import "./globals.css";
 import { AppProvider } from "../components/AppProvider";
 import Tabs from "../components/Tabs";
+import StartupSplash from "../components/StartupSplash";
 
 export const metadata = {
   title: "Coswear",
   description: "Cosplayer-focused WEAR-style PWA",
   manifest: "/manifest.json",
-  themeColor: "#ff5c8d"
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Coswear"
+  }
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
+  themeColor: "#ffffff"
 };
 
 export default function RootLayout({ children }) {
@@ -19,8 +32,14 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <AppProvider>
-          <main>{children}</main>
-          <Tabs />
+          <StartupSplash />
+          <div className="app-shell">
+            <header className="site-header">
+              <img src="/icons/hue-logo.svg" alt="HUE" className="site-logo" />
+            </header>
+            <main>{children}</main>
+            <Tabs />
+          </div>
         </AppProvider>
       </body>
     </html>
