@@ -382,6 +382,92 @@ textarea {
   flex: 1;
 }
 
+.search-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.search-logo img {
+  width: min(180px, 48vw);
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 14px 26px rgba(17, 24, 39, 0.08);
+}
+
+.search-bar.is-pill {
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  box-shadow: 0 12px 26px rgba(17, 24, 39, 0.06);
+}
+
+.search-bar.is-pill input {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.search-bar.is-pill input:focus {
+  outline: none;
+}
+
+.search-icon {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.section-title.compact {
+  margin: 8px 0 4px;
+}
+
+.category-list {
+  display: grid;
+  gap: 10px;
+}
+
+.category-row {
+  font-size: 14px;
+  color: var(--text);
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.04);
+}
+
+.tag-chip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tag-chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--text);
+  background: #f7f8fb;
+  cursor: pointer;
+}
+
+.button.ghost {
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
 .empty-state {
   padding: 24px;
   text-align: center;
