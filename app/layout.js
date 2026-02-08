@@ -1,12 +1,26 @@
 import "./globals.css";
 import { AppProvider } from "../components/AppProvider";
 import Tabs from "../components/Tabs";
+import StartupSplash from "../components/StartupSplash";
+import TopHeader from "../components/TopHeader";
 
 export const metadata = {
   title: "Coswear",
   description: "Cosplayer-focused WEAR-style PWA",
   manifest: "/manifest.json",
-  themeColor: "#ff5c8d"
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Coswear"
+  }
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
+  themeColor: "#ffffff"
 };
 
 export default function RootLayout({ children }) {
@@ -19,8 +33,12 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <AppProvider>
-          <main>{children}</main>
-          <Tabs />
+          <StartupSplash />
+          <div className="app-shell">
+            <TopHeader />
+            <main>{children}</main>
+            <Tabs />
+          </div>
         </AppProvider>
       </body>
     </html>

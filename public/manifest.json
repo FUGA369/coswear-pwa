@@ -4,8 +4,8 @@
   "description": "Cosplayer-focused WEAR-style PWA",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fafafa",
-  "theme_color": "#ff5c8d",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "/icons/icon.svg",
