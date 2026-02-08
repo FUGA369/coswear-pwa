@@ -67,6 +67,11 @@ main {
   height: auto;
 }
 
+.site-logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
 .section-title {
   font-size: 16px;
   font-weight: 600;
