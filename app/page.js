@@ -27,6 +27,29 @@ export default function HomePage() {
         <span className="topic-title">{topic.key}</span>
         <span className="topic-hint">{topic.description}</span>
       </div>
+      <div className="preview-card">
+        <div className="section-title">画面プレビュー</div>
+        <p className="preview-text">
+          主要画面をすぐ確認できるリンクです。
+        </p>
+        <div className="preview-links">
+          <a className="preview-link" href="/">
+            トップ
+          </a>
+          <a className="preview-link" href="/search">
+            検索
+          </a>
+          <a className="preview-link" href="/post">
+            投稿
+          </a>
+          <a className="preview-link" href="/saved">
+            保存
+          </a>
+          <a className="preview-link" href="/my">
+            マイページ
+          </a>
+        </div>
+      </div>
       <div className="section-title">New Posts</div>
       <PostGrid posts={posts} />
     </div>
