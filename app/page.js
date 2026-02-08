@@ -10,6 +10,18 @@ export default function HomePage() {
 
   return (
     <div>
+      <div className="icon-preview-card">
+        <div>
+          <div className="icon-preview-title">アプリアイコン確認</div>
+          <div className="icon-preview-text">
+            そのままブラウザで確認できるリンクです。
+          </div>
+          <a className="icon-preview-link" href="/icons/icon.svg" target="_blank" rel="noreferrer">
+            /icons/icon.svg を開く
+          </a>
+        </div>
+        <img className="icon-preview-image" src="/icons/icon.svg" alt="アプリアイコンプレビュー" />
+      </div>
       <div className="topic-card">
         <span className="topic-label">今日のお題</span>
         <span className="topic-title">{topic.key}</span>
